@@ -35,85 +35,111 @@
         </section>
         <section id="geometry">
             <h2>Geometry</h2>
-            <article>
-                <h2>Square</h2>
-                <form action="">
-                    <label for="side_square">
-                        Side square:
-                    </label>
-                    <input type="number" id="side_square" name="side_square" required>                
-                    <select name="measure_square" id="measure_square" title="medida">
-                        <option value="cm">centimetros</option>
-                        <option value="mm">milimitros</option>
-                        <option value="m">metros</option>
-                        <option value="km">kilometros</option>
-                    </select>
-                    <button type="button" title="Perimeter" onclick="getPerimeterSquare()">Perimeter</button>
-                    <button type="button" title="Area" onclick="getAreaSquare()">Area</button>
-                    <input type="reset" value="reset">   
-                </form>
-                <span id="result_square"></span>
-            </article>
-            <article>
-                <h2>Triangle</h2>
-                <form action="">
-                    <label for="side_triangleA">
-                        Side A triangle:
-                    </label>
-                    <input type="number" id="side_triangleA" name="side_triangleA" required>
-                    <label for="side_triangleB">
-                        Side B triangle:
-                    </label>
-                    <input type="number" id="side_triangleB" name="side_triangleB" required>
-                    <label for="base_triangle">
-                        Base triangle:
-                    </label>
-                    <input type="number" id="base_triangle" name="base_triangle">
-                    <label for="height_triangle">
-                        Height triangle:
-                    </label>
-                    <input type="number" id="height_triangle" name="height_triangle" required>                  
-                    <select name="measure_triangle" id="measure_triangle" title="medida">
-                        <option value="cm">centimetros</option>
-                        <option value="mm">milimitros</option>
-                        <option value="m">metros</option>
-                        <option value="km">kilometros</option>
-                    </select>
-                    <button type="button" title="Perimeter" onclick="getPerimeterTriangle()">Perimeter</button>
-                    <button type="button" title="Area" onclick="getAreaTriangle()">Area</button>
-                    <input type="reset" value="reset">   
-                </form>
-                <span id="result_triangle"></span>
-            </article>    
-            <article>
-                <h2>Circle</h2>
-                <form action="">
-                    <input type="radio" name="radio_check" id="radio_check">
-                    <label for="radio_check">
-                        Radio:                        
-                        <input type="number" id="radio" name="radio" required disabled> 
-                    </label>
-                    <input type="radio" name="radio_check" id="diameter_check">
-                    <label for="diameter_check">
-                        Diameter:
-                        <input type="number" id="diameter" name="diameter" required disabled>  
-                    </label>             
-                    <select name="measure_circle" id="measure_circle" title="medida">
-                        <option value="cm">centimetros</option>
-                        <option value="mm">milimitros</option>
-                        <option value="m">metros</option>
-                        <option value="km">kilometros</option>
-                    </select>
-                    <button type="button" title="Perimeter" onclick="getPerimeterCircle()">Perimeter</button>
-                    <button type="button" title="Area" onclick="getAreaCircle()">Area</button>
-                    <input type="reset" value="reset">   
-                </form>
-                <span id="result_circle"></span>
-            </article>  
+            <div>
+                <article>
+                    <h2>Square</h2>
+                    <form action="">
+                        <label for="side_square">
+                            Side square:
+                        </label>
+                        <input type="number" id="side_square" name="side_square" required>                
+                        <select name="measure_square" id="measure_square" title="medida">
+                            <option value="cm">centimetros</option>
+                            <option value="mm">milimitros</option>
+                            <option value="m">metros</option>
+                            <option value="km">kilometros</option>
+                        </select>
+                        <button type="button" title="Perimeter" onclick="getPerimeterSquare()">Perimeter</button>
+                        <button type="button" title="Area" onclick="getAreaSquare()">Area</button>
+                        <input type="reset" value="reset">   
+                    </form>
+                    <span id="result_square"></span>
+                </article>
+                <article>
+                    <h2>Triangle</h2>
+                    <form action="">
+                        <label for="side_triangleA">
+                            Side A triangle:
+                        </label>
+                        <input type="number" id="side_triangleA" name="side_triangleA" required>
+                        <label for="side_triangleB">
+                            Side B triangle:
+                        </label>
+                        <input type="number" id="side_triangleB" name="side_triangleB" required>
+                        <label for="base_triangle">
+                            Base triangle:
+                        </label>
+                        <input type="number" id="base_triangle" name="base_triangle">
+                        <label for="height_triangle">
+                            Height triangle:
+                        </label>
+                        <input type="number" id="height_triangle" name="height_triangle" required>                  
+                        <select name="measure_triangle" id="measure_triangle" title="medida">
+                            <option value="cm">centimetros</option>
+                            <option value="mm">milimitros</option>
+                            <option value="m">metros</option>
+                            <option value="km">kilometros</option>
+                        </select>
+                        <button type="button" title="Perimeter" onclick="getPerimeterTriangle()">Perimeter</button>
+                        <button type="button" title="Area" onclick="getAreaTriangle()">Area</button>
+                        <input type="reset" value="reset">   
+                    </form>
+                    <span id="result_triangle"></span>
+                </article>    
+                <article>
+                    <h2>Circle</h2>
+                    <form action="">
+                        <input type="radio" name="radio_check" id="radio_check">
+                        <label for="radio_check">
+                            Radio:                        
+                            <input type="number" id="radio" name="radio" required disabled> 
+                        </label>
+                        <input type="radio" name="radio_check" id="diameter_check">
+                        <label for="diameter_check">
+                            Diameter:
+                            <input type="number" id="diameter" name="diameter" required disabled>  
+                        </label>             
+                        <select name="measure_circle" id="measure_circle" title="medida">
+                            <option value="cm">centimetros</option>
+                            <option value="mm">milimitros</option>
+                            <option value="m">metros</option>
+                            <option value="km">kilometros</option>
+                        </select>
+                        <button type="button" title="Perimeter" onclick="getPerimeterCircle()">Perimeter</button>
+                        <button type="button" title="Area" onclick="getAreaCircle()">Area</button>
+                        <input type="reset" value="reset">   
+                    </form>
+                    <span id="result_circle"></span>
+                </article>  
+            </div>
         </section>
         <section id="discounts">
             <h2>Discounts</h2>
-            <article></article>
+            <div>
+                <article>
+                    <h3>Coupon book</h3>
+                    <ul>
+                        <li>COUPON10</li>
+                        <li>COUPON15</li>
+                        <li>COUPON30</li>
+                        <li>COUPON60</li>
+                        <li>COUPON75</li>
+                    </ul>
+                </article>
+                <article>
+                    <form action="">
+                        <label for="price">Normal Price :</label>
+                        <span>$</span>
+                        <input type="number" id="price" >
+                        <label for="discount">Discount :</label>
+                        <input type="number" id="discount" >
+                        <span>%</span>
+                        <label for="coupon">Coupon :</label>
+                        <input type="text" id="coupon">
+                    </form>
+                    <p id="total_pay"></p>
+                </article>
+            </div>
         </section>
         <section id="statistics">
             <h2>Statistics</h2>
