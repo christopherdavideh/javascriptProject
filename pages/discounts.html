@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoMath WebApp</title>
+</head>
+<body>
+    <header>
+        <picture>
+            <source media="(min-width: 600px)"
+                    srcset="../src/icon/calipers_icon.svg" />
+            <source media="(min-width: 300px) and (max-width: 600px)"
+                    srcset="../src/icon/calipers_icon.svg" />
+            <source media="(max-width: 50px)"
+                    srcset="../src/icon/calipers_icon.svg" />
+            <img src="../src/icon/calipers_icon.svg" alt="logo--header geometry"  width="60" height="60"/>
+        </picture>
+        <a href="/">GeoMath</a>
+        <nav>
+            <ul>
+                <li><a href="./geometry.html">Geometry</a></li>
+                <li><a href="./discounts.html">discounts</a></li>
+                <li><a href="./statistics.html">statistics</a></li>
+                <li><a href="./salary.html">analysis</a></li>
+            </ul>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Discounts</h2>
+        <section id="discounts">
+            <article>
+                <h3>Coupon book</h3>
+                <ul>
+                    <li>COUPON10</li>
+                    <li>COUPON15</li>
+                    <li>COUPON30</li>
+                    <li>COUPON60</li>
+                    <li>COUPON75</li>
+                </ul>
+            </article>
+            <article>
+                <form action="">
+                    <label for="price">Normal Price :</label>
+                    <span>$</span>
+                    <input type="number" id="price" >
+                    <label for="discount">Discount :</label>
+                    <input type="number" id="discount" >
+                    <span>%</span>
+                    <label for="coupon">Coupon :</label>
+                    <input type="text" id="coupon">
+                </form>
+                <p id="total_pay"></p>
+            </article>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="../src/js/discounts.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics</title>
+    <link rel="stylesheet" href="../src/css/main.css">
+</head>
+<body>
+    <header>
+        <picture>
+            <source media="(min-width: 600px)"
+                    srcset="../src/icon/calipers_icon.svg" />
+            <source media="(min-width: 300px) and (max-width: 600px)"
+                    srcset="../src/icon/calipers_icon.svg" />
+            <source media="(max-width: 50px)"
+                    srcset="../src/icon/calipers_icon.svg" />
+            <img src="../src/icon/calipers_icon.svg" alt="logo--header geometry"  width="60" height="60"/>
+        </picture>
+        <a href="/">GeoMath</a>
+        <nav>
+            <ul>
+                <li><a href="./geometry.html">Geometry</a></li>
+                <li><a href="./discounts.html">discounts</a></li>
+                <li><a href="./statistics.html">statistics</a></li>
+                <li><a href="./salary.html">analysis</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Tab links -->
+        <div class="tab">
+            <button class="tablink" onclick="openOperation('Mean', this, 'cornflowerblue')" id="defaultOpen">Mean</button>
+            <button class="tablink" onclick="openOperation('Median', this, 'lightcoral')">Median</button>
+            <button class="tablink" onclick="openOperation('harmonicMean', this, 'lightseagreen')">Harmonic Mean</button>
+            <button class="tablink" onclick="openOperation('Mode', this, 'darkorchid')">Mode</button>
+        </div>
+        
+        <!-- Tab content -->
+        <div id="Mean" class="tabcontent">
+            <h3>Mean</h3>
+            <p>The mean is the average of a data set.</p>
+            <form action="">
+                <label for="average_data">Valores:</label>
+                <input type="text" id="average_data" placeholder="Example: 4-5.7-3-9">
+                <button type="button" onclick="getMean()">Calculate</button>                
+            </form>
+            <p id="result_average"></p>
+        </div>
+        
+        <div id="Median" class="tabcontent">
+            <h3>Median</h3>
+            <p>The median is the middle of the set of numbers.</p>
+            <form action="">
+                <label for="median_data">Valores:</label>
+                <input type="text" id="median_data" placeholder="Example: 4-5.7-3-9">
+                <button type="button" onclick="getMedian()">Calculate</button>                
+            </form>
+            <p id="result_median"></p>
+        </div>
+        <div id="harmonicMean" class="tabcontent">
+            <h3>Harmonic Mean</h3>
+            <p>The harmonic mean is used quite a lot in physics. In some cases involving rates and ratios it gives a better average than the arithmetic mean. In addition, you’ll also find uses in geometry, finance and computer science.</p>
+            <form action="">
+                <label for="harmonic_data">Valores:</label>
+                <input type="text" id="harmonic_data" placeholder="Example: 4-5.7-3-9">
+                <button type="button" onclick="getHarmonicMean()">Calculate</button>                
+            </form>
+            <p id="result_harmonic"></p>
+        </div>
+        <div id="Mode" class="tabcontent">
+            <h3>Mode</h3>
+            <p>The mode is the most common number in a data set.</p>
+            <form action="">
+                <label for="mode_data">Valores:</label><br>
+                <textarea name="mode_data" id="mode_data" cols="30" rows="10" placeholder="Example: 4-5.7-3-9 o nombres-ciudades-animales-objetos"></textarea>
+                <button type="button" onclick="getMode()">Calculate</button>                
+            </form>            
+            <p id="result_item"></p>
+            <p id="result_mode"></p>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="../src/js/statistics.js"></script>
+</body>
+</html>
