@@ -98,7 +98,7 @@ function calculateDiscount(){
     if(isNaN(total) || total == undefined)
         total = 0.00;
 
-    result.textContent = `Total a pagar: $ ${total}`;
+    result.textContent = `$ ${total}`;
 }
 
 //#endregion

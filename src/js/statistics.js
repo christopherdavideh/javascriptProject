@@ -117,7 +117,7 @@ function getMode(){
 
 //#endregion
 
-//#region 
+//#region Harmonic Mean
 function getHarmonicMean(){
     const input_harmonic = document.getElementById("harmonic_data");
     const result_harmonic = document.getElementById("result_harmonic");

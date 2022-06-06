@@ -119,28 +119,39 @@ function getAreaTriangle(){
     const measure = document.getElementById("measure_triangle");
     const result_triangle = document.getElementById("result_triangle");
     if (height.value === "") {
-        if (sideA.value !== "" && sideB.value === "" && base.value !== "") {
+        /*if (sideA.value !== "" && sideB.value === "" && base.value !== "") {
             const get_height = HeightTriangle(sideA.value, base.value);
+            height.value=get_height;
             const area = AreaTriangle(base.value, get_height);
             result_triangle.textContent = `Area: ${area} ${measure.value}²`;
 
         } else if (sideA.value === "" && sideB.value !== "" && base.value !== "") {
             const get_height = HeightTriangle(sideB.value, base.value);
+            height.value = 0;
+            height.value=get_height;
             const area = AreaTriangle(base.value, get_height);
             result_triangle.textContent = `Area: ${area} ${measure.value}²`;
-        } else if (sideA.value !== "" && sideB.value !== "" && base.value !== "") {
-            const get_height = HeightTriangle(sideA.value, base.value);
+        } else*/ if ((sideA.value !== "" && sideB.value !== "" && base.value !== "")) {
+            let get_height
+            if ((sideA.value === sideB.value )) {
+                get_height = HeightTriangle(sideA.value, base.value);                
+            } else if(sideA.value === base.value) {
+                get_height = HeightTriangle(sideA.value, sideB.value);                
+            } else if (sideB.value === base.value) {
+                get_height = HeightTriangle(sideB.value, sideA.value);                
+            }
+            height.value=get_height;
             const area = AreaTriangle(base.value, get_height);
             result_triangle.textContent = `Area: ${area} ${measure.value}²`;
         } else {
-            console.error("enter min. 1 side of the triangle and the base to calculate the area")
+            console.error("enter the height the triangle to calculate the area")
         }
     } else {
         if (base.value !== "") {
             const area = AreaTriangle(base.value, height.value);
             result_triangle.textContent = `Area: ${area} ${measure.value}²`;
         }else{
-            console.error("Need the height of the triangle to calculate the area")
+            console.error("Need the base of the triangle to calculate the area")
         }
     }
 

@@ -5,61 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GeoMath WebApp</title>
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/tablet.css" media="screen and (min-width: 666px)">
+    <link rel="stylesheet" href="./src/css/desktop.css" media="screen and (min-width: 1024px)">
 </head>
 <body>
     <header>
-        <picture>
-            <source media="(min-width: 600px)"
-                    srcset="./src/icon/calipers_icon.svg" />
-            <source media="(min-width: 300px) and (max-width: 600px)"
-                    srcset="./src/icon/calipers_icon.svg" />
-            <source media="(max-width: 50px)"
-                    srcset="./src/icon/calipers_icon.svg" />
-            <img src="./src/icon/calipers_icon.svg" alt="logo--header geometry"  width="60" height="60"/>
-        </picture>
-        <a href="/">GeoMath</a>
-        <nav>
-            <ul>
+        <div class="header-logo">
+            <picture>
+                <source media="(min-width: 600px)"
+                        srcset="./src/icon/calipers_icon.svg" />
+                <source media="(min-width: 300px) and (max-width: 600px)"
+                        srcset="./src/icon/calipers_icon.svg" />
+                <source media="(max-width: 50px)"
+                        srcset="./src/icon/calipers_icon.svg" />
+                <img src="./src/icon/calipers_icon.svg" alt="logo--header geometry"  width="60" height="60"/>
+            </picture>
+            <a href="/">GeoMath</a>
+        </div>    
+        <nav class="header-nav">
+            <ul class="header-menu">
                 <li><a href="./pages/geometry.html">Geometry</a></li>
-                <li><a href="./pages/discounts.html">discounts</a></li>
-                <li><a href="./pages/statistics.html">statistics</a></li>
-                <li><a href="./pages/salary.html">analysis</a></li>
+                <li><a href="./pages/discounts.html">Discounts</a></li>
+                <li><a href="./pages/statistics.html">Statistics</a></li>
+                <li><a href="./pages/salary.html">Analysis</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <p>what can I do for you?</p>
-        <section id="geometry">
-            <h2>Geometry</h2>
-            <div>
-                <p></p>
-                <a href="./pages/geometry.html">Ver más</a>
-            </div>
-        </section>
-        <section id="discounts">
-            <h2>Discounts</h2>
-            <div>
-                <p></p>
-                <a href="./pages/discounts.html">Ver más</a>
-            </div>
-        </section>
-        <section id="statistics">
-            <h2>Statistics</h2>
-            <div>
-                <p></p>
-                <a href="./pages/statistics.html">Ver más</a>
-            </div>
-        </section>
-        <section id="analysis">
-            <h2>Analysis</h2>
-            <div>
-                <p></p>
-                <a href="./pages/salary.html">Ver más</a>
-            </div>
-        </section>
+    <main class="main-index">
+        <p>What can i do for you?</p>
+        <div class="main-index__container">
+            <section class="main-index__section" id="geometry">
+                <h2>Geometry</h2>
+                <div>
+                    <span class="geometry-span"></span><br>
+                    <a href="./pages/geometry.html">Ver más</a>
+                </div>
+            </section>
+            <section class="main-index__section" id="discounts">
+                <h2>Discounts</h2>
+                <div>
+                    <span class="discounts-span"></span><br>
+                    <a href="./pages/discounts.html">Ver más</a>
+                </div>
+            </section>
+            <section class="main-index__section" id="statistics">
+                <h2>Statistics</h2>
+                <div>
+                    <span class="statistics-span"></span><br>
+                    <a href="./pages/statistics.html">Ver más</a>
+                </div>
+            </section>
+            <section class="main-index__section" id="analysis">
+                <h2>Analysis</h2>
+                <div>
+                    <span class="analysis-span"></span><br>
+                    <a href="./pages/salary.html">Ver más</a>
+                </div>
+            </section>
+        </div>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <p>Christopher David Erazo Herrera @christopherdavideh • Todos los derechos reservados © 2022.</p>
+        <nav>
+            <ul class="footer-social">
+                <li><a href="https://www.linkedin.com/in/christopherdavideh/" target="_blank" rel="noopener" title="LinkedIn"><span class="footer-linkedin"></span></a></li>
+                <li><a href="https://github.com/christopherdavideh" target="_blank" rel="noopener" title="GitHub"><span class="footer-github"></span></a></li>
+                <li><a href="https://twitter.com/christopdavideh" target="_blank" rel="noopener" title="Twitter"><span class="footer-twitter"></span></a></li>
+                <li><a href="https://www.instagram.com/christopherdavideh/" target="_blank" rel="noopener" title="Instagram"><span class="footer-instagram"></span></a></li>
+                <li><a href="https://www.facebook.com/christopherdavideh" target="_blank" rel="noopener" title="Facebook"><span class="footer-facebook"></span></a></li>
+                <li><a href="https://christopherdavideh.com/" target="_blank" rel="noopener" title="My Web"><span class="footer-web"></span></a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>

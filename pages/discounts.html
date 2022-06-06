@@ -5,59 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GeoMath WebApp</title>
+    <link rel="stylesheet" href="../src/css/main.css">
 </head>
 <body>
     <header>
-        <picture>
-            <source media="(min-width: 600px)"
-                    srcset="../src/icon/calipers_icon.svg" />
-            <source media="(min-width: 300px) and (max-width: 600px)"
-                    srcset="../src/icon/calipers_icon.svg" />
-            <source media="(max-width: 50px)"
-                    srcset="../src/icon/calipers_icon.svg" />
-            <img src="../src/icon/calipers_icon.svg" alt="logo--header geometry"  width="60" height="60"/>
-        </picture>
-        <a href="/">GeoMath</a>
-        <nav>
-            <ul>
+        <div class="header-logo">
+            <picture>
+                <source media="(min-width: 600px)"
+                        srcset="../src/icon/calipers_icon.svg" />
+                <source media="(min-width: 300px) and (max-width: 600px)"
+                        srcset="../src/icon/calipers_icon.svg" />
+                <source media="(max-width: 50px)"
+                        srcset="../src/icon/calipers_icon.svg" />
+                <img src="../src/icon/calipers_icon.svg" alt="logo--header geometry"  width="60" height="60"/>
+            </picture>
+            <a href="/">GeoMath</a>
+        </div>
+        <nav class="header-nav">
+            <ul class="header-menu">
                 <li><a href="./geometry.html">Geometry</a></li>
-                <li><a href="./discounts.html">discounts</a></li>
-                <li><a href="./statistics.html">statistics</a></li>
-                <li><a href="./salary.html">analysis</a></li>
-            </ul>
+                <li><a href="./discounts.html">Discounts</a></li>
+                <li><a href="./statistics.html">Statistics</a></li>
+                <li><a href="./salary.html">Analysis</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Discounts</h2>
-        <section id="discounts">
-            <article>
-                <h3>Coupon book</h3>
-                <ul>
-                    <li>COUPON10</li>
-                    <li>COUPON15</li>
-                    <li>COUPON30</li>
-                    <li>COUPON60</li>
-                    <li>COUPON75</li>
-                </ul>
+        <h2 class="main-discount__subtitle">Calculate your discount</h2>
+        <section class="main-discount" id="discounts">            
+            <article class="main-discount__coupon">
+                <span class="main-discount__background">
+                    
+                </span>
+                <div class="main-discount__list">
+                    <ul>
+                        <li>COUPON10</li>
+                        <li>COUPON15</li>
+                        <li>COUPON30</li>
+                        <li>COUPON60</li>
+                        <li>COUPON75</li>
+                    </ul>
+                </div>
             </article>
             <article>
                 <form action="">
-                    <label for="price">Normal Price :</label>
+                    <label for="price">Price :&nbsp;&nbsp;&nbsp;&nbsp; </label>
                     <span>$</span>
-                    <input type="number" id="price" >
-                    <label for="discount">Discount :</label>
+                    <input type="number" id="price" ><br>
+                    <label for="discount">Discount :&nbsp;</label>
                     <input type="number" id="discount" >
-                    <span>%</span>
-                    <label for="coupon">Coupon :</label>
+                    <span>%</span><br>
+                    <label for="coupon">Coupon :&nbsp;&nbsp;</label>
                     <input type="text" id="coupon">
                 </form>
-                <p id="total_pay"></p>
+                <p><b>Total a Pagar:</b></p>
+                <p id="total_pay" class="total-pay">$ 0.00</p>
+                <span class="money-background"></span>
             </article>
         </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <p>Christopher David Erazo Herrera @christopherdavideh • Todos los derechos reservados © 2022.</p>
+        <nav>
+            <ul class="footer-social">
+                <li><a href="https://www.linkedin.com/in/christopherdavideh/" target="_blank" rel="noopener" title="LinkedIn"><span class="footer-linkedin"></span></a></li>
+                <li><a href="https://github.com/christopherdavideh" target="_blank" rel="noopener" title="GitHub"><span class="footer-github"></span></a></li>
+                <li><a href="https://twitter.com/christopdavideh" target="_blank" rel="noopener" title="Twitter"><span class="footer-twitter"></span></a></li>
+                <li><a href="https://www.instagram.com/christopherdavideh/" target="_blank" rel="noopener" title="Instagram"><span class="footer-instagram"></span></a></li>
+                <li><a href="https://www.facebook.com/christopherdavideh" target="_blank" rel="noopener" title="Facebook"><span class="footer-facebook"></span></a></li>
+                <li><a href="https://christopherdavideh.com/" target="_blank" rel="noopener" title="My Web"><span class="footer-web"></span></a></li>
+            </ul>
+        </nav>
     </footer>
     <script src="../src/js/discounts.js"></script>
 </body>

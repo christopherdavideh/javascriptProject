@@ -5,37 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GeoMath WebApp</title>
+    <link rel="stylesheet" href="../src/css/main.css">
 </head>
 <body>
     <header>
-        <picture>
-            <source media="(min-width: 600px)"
-                    srcset="../src/icon/calipers_icon.svg" />
-            <source media="(min-width: 300px) and (max-width: 600px)"
-                    srcset="../src/icon/calipers_icon.svg" />
-            <source media="(max-width: 50px)"
-                    srcset="../src/icon/calipers_icon.svg" />
-            <img src="../src/icon/calipers_icon.svg" alt="logo--header geometry"  width="60" height="60"/>
-        </picture>
-        <a href="/">GeoMath</a>
-        <nav>
-            <ul>
+        <div class="header-logo">
+            <picture>
+                <source media="(min-width: 600px)"
+                        srcset="../src/icon/calipers_icon.svg" />
+                <source media="(min-width: 300px) and (max-width: 600px)"
+                        srcset="../src/icon/calipers_icon.svg" />
+                <source media="(max-width: 50px)"
+                        srcset="../src/icon/calipers_icon.svg" />
+                <img src="../src/icon/calipers_icon.svg" alt="logo--header geometry"  width="60" height="60"/>
+            </picture>
+            <a href="/">GeoMath</a>
+        </div>
+        <nav class="header-nav">
+            <ul class="header-menu">
                 <li><a href="./geometry.html">Geometry</a></li>
-                <li><a href="./discounts.html">discounts</a></li>
-                <li><a href="./statistics.html">statistics</a></li>
-                <li><a href="./salary.html">analysis</a></li>
-            </ul>
+                <li><a href="./discounts.html">Discounts</a></li>
+                <li><a href="./statistics.html">Statistics</a></li>
+                <li><a href="./salary.html">Analysis</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="analysis">
-            <h2>Analysis</h2>
-            <article></article>
+        <section class="main-analysis" id="analysis">
+            <!--<h2>Analysis</h2>-->
+            <span></span><br>
+            <p>Processing new thoughts about Analysis...</p>
         </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <p>Christopher David Erazo Herrera @christopherdavideh • Todos los derechos reservados © 2022.</p>
+        <nav>
+            <ul class="footer-social">
+                <li><a href="https://www.linkedin.com/in/christopherdavideh/" target="_blank" rel="noopener" title="LinkedIn"><span class="footer-linkedin"></span></a></li>
+                <li><a href="https://github.com/christopherdavideh" target="_blank" rel="noopener" title="GitHub"><span class="footer-github"></span></a></li>
+                <li><a href="https://twitter.com/christopdavideh" target="_blank" rel="noopener" title="Twitter"><span class="footer-twitter"></span></a></li>
+                <li><a href="https://www.instagram.com/christopherdavideh/" target="_blank" rel="noopener" title="Instagram"><span class="footer-instagram"></span></a></li>
+                <li><a href="https://www.facebook.com/christopherdavideh" target="_blank" rel="noopener" title="Facebook"><span class="footer-facebook"></span></a></li>
+                <li><a href="https://christopherdavideh.com/" target="_blank" rel="noopener" title="My Web"><span class="footer-web"></span></a></li>
+            </ul>
+        </nav>
     </footer>
     <script src="../src/js/salary.js"></script>
 </body>
